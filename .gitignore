@@ -1,0 +1,12 @@
+**/__pycache__/*
+pq_dashboard/frontend/node_modules/*
+pq_dashboard/frontend/www/assets/*
+!pq_dashboard/frontend/www/assets/.gitkeep
+!pq_dashboard/frontend/www/assets/ReactToastify.css
+!pq_dashboard/frontend/www/assets/favicon.png
+build/
+dist/
+.mypy_cache/
+.vscode/
+.coverage
+.pytest_cache

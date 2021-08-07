@@ -1,0 +1,27 @@
+{
+  "name": "pq-dashboard-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i src/index.css -o www/assets/styles.css && esbuild src/index.tsx src/index.tsx --watch --outdir=www/assets/ --bundle",
+    "build": "NODE_ENV=production node esbuild.config.js && NODE_ENV=production npx tailwindcss -i src/index.css -o www/assets/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "esbuild": "^0.12.15",
+    "tailwindcss": "^2.2.7"
+  },
+  "dependencies": {
+    "jsonpath": "^1.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-json-view": "^1.21.3",
+    "react-timeago": "^6.2.1",
+    "react-toastify": "^7.0.4",
+    "swr": "^0.5.6"
+  }
+}

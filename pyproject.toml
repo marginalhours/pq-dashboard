@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "pq-dashboard"
+version = "0.1.1"
+description = "Web dashboard and CLI utility for managing PQ queues"
+authors = ["Tom Keefe <8655118+MisterKeefe@users.noreply.github.com>"]
+homepage = "https://github.com/MisterKeefe/pq-dashboard"
+repository = "https://github.com/MisterKeefe/pq-dashboard"
+keywords = ["pq", "dashboard", "postgres"]
+classifiers = [
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: JavaScript",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: SQL",
+    "Topic :: Database :: Front-Ends",
+]
+readme = "README.md"
+license = "MIT"
+include = [
+    "LICENSE",
+    "pq_dashboard/frontend/www/assets/styles.css",
+    "pq_dashboard/frontend/www/assets/index.js",
+    "pq_dashboard/frontend/www/assets/favicon.png",
+]
+exclude = [
+    "pq_dashboard/frontend/node_modules/",
+    "**/*.pyc",
+    "pq_dashboard/frontend/src",
+]
+
+[tool.poetry.scripts]
+pq-dashboard = "pq_dashboard.cli:main"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<4.0"
+psycopg2 = "^2.9.1"
+fastapi = "^0.67.0"
+uvicorn = { extras = ["standard"], version = "^0.14.0" }
+pydantic = "^1.8.2"
+aiofiles = "^0.7.0"
+pytest-postgresql = "^3.1.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+mypy = "^0.910"
+black = "^21.7b0"
+isort = "^5.9.2"
+pre-commit = "^2.13.0"
+pq = "^1.9.0"
+pytest-cov = "^2.12.1"
+requests = "^2.26.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

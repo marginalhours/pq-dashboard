@@ -1,0 +1,12 @@
+.gitignore
+.pre-commit-config.yaml
+.pq-dash.env
+README.md
+.mypy_cache
+dist
+tests
+scripts
+pq_dashboard/frontend/node_modules
+.coverage
+.pytest_cache
+.github
