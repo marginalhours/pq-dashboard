@@ -50,14 +50,14 @@ For more details, see the help messages on all the commands
 
 `pq-dashboard` will read config from environment variables prefixed with `PQ_DASH`.
 
-| Variable                   | Default value | Explanation                                     |
-| -------------------------- | ------------- | ----------------------------------------------- |
-| `PQ_DASH_PGHOST`           | `localhost`   | Host the PostgreSQL server is running on.       |
-| `PQ_DASH_PGPORT`           | `5432`        | Port the PostgreSQL server is running on.       |
-| `PQ_DASHBOARD_PGUSER`      | `postgres`    | PostgreSQL user name to connect as.             |
-| `PQ_DASHBOARD_PGPASSWORD`  | `postgres`    | Password for the PostgreSQL user.               |
-| `PQ_DASHBOARD_DATABASE`    | `postgres`    | PostgreSQL database name containing queue table |
-| `PQ_DASHBOARD_QUEUE_TABLE` | `queue`       | Name of queue table containing items            |
+| Variable              | Default value | Explanation                                     |
+| --------------------- | ------------- | ----------------------------------------------- |
+| `PQ_DASH_PGHOST`      | `localhost`   | Host the PostgreSQL server is running on.       |
+| `PQ_DASH_PGPORT`      | `5432`        | Port the PostgreSQL server is running on.       |
+| `PQ_DASH_PGUSER`      | `postgres`    | PostgreSQL user name to connect as.             |
+| `PQ_DASH_PGPASSWORD`  | `postgres`    | Password for the PostgreSQL user.               |
+| `PQ_DASH_DATABASE`    | `postgres`    | PostgreSQL database name containing queue table |
+| `PQ_DASH_QUEUE_TABLE` | `queue`       | Name of queue table containing items            |
 
 Alternatively, these variables can be stored in a plaintext `.pq-dash.env` file. Enviroment variables
 will take precedence over the `.env` file.
