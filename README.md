@@ -4,6 +4,10 @@
 
 [Sound familiar?](https://github.com/Parallels/rq-dashboard#introduction) Basically, `pq-dashboard` is to `pq` as `rq-dashboard` is to `rq`.
 
+## Screenshot
+
+![pq-dashboard screenshot](https://user-images.githubusercontent.com/8655118/128673481-e417ff5c-d84e-418c-b2df-93d0a0ad25fb.png)
+
 ## Quickstart
 
 ### Installing from PyPI
